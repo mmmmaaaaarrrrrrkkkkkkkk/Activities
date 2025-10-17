@@ -16,11 +16,9 @@
   "color": "#000000",
   "category": "other",
   "tags": [
-    "localhost",
     "development",
     "dev",
     "webdev",
-    "server",
-    "local"
+    "server"
   ]
 }
