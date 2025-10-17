@@ -7,7 +7,7 @@ const browsingTimestamp = Math.floor(Date.now() / 1000)
 async function getFavi(): Promise<string> {
   let favicon: string | undefined
   const nodeList = document.getElementsByTagName('link')
-  
+
   for (let i = 0; i < nodeList.length; i++) {
     if (nodeList[i]?.getAttribute('rel') === 'icon' || nodeList[i]?.getAttribute('rel') === 'shortcut icon') {
       favicon = nodeList[i]?.getAttribute('href') ?? undefined
